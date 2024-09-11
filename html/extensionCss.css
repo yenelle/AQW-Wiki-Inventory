@@ -1,0 +1,101 @@
+.inventoryButton {
+    position: relative;
+    z-index: 999;
+    font-family: verdana,arial,helvetica,sans-serif;
+    font-size: 14pt;
+    color: rgb(255, 255, 255);
+    background: linear-gradient(#bf0000, #5d0000);
+    padding: 15px;
+    box-shadow: 1px 1px 1px #000;
+    border-radius: 10px;
+    border: 3.5px outset #ffcc00;
+    margin-right: 0px;
+    margin-left: 0px;
+}
+.optionCheckboxes {
+    margin-right: 10px;
+}
+.viewOptionToggles {
+    height: 20px;
+}
+.viewOptionToggles:hover {
+    color: rgb(255, 255, 255);
+    filter: brightness(130%);
+}
+.viewOptionToggles:active {
+    transform: scale(0.75);
+}
+#viewOptionPreview {
+    user-select: none;
+}
+#updateInventoryButton {
+    position: relative;
+    z-index: 998;
+    margin-left: 0px;
+    margin-right: 0px;
+    border-radius: 10px 0px 0px 10px;
+    border-right: 0px;
+}
+#optionsInventoryButton {
+    margin-left: 0px;
+    margin-right: 10px;
+    padding: 15px 2px 15px 2px;
+    border-radius: 0px 10px 10px 0px;
+    border-left: 3px solid #ffcc00;
+}
+.inventoryButton:hover {
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    filter: brightness(120%);
+}
+.inventoryButton:active {
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    box-shadow: inset 2px 2px 5px #000;
+}
+.tooltip {
+    display: none;
+    position: fixed;
+    width: fit-content;
+    left: 50%;
+    top: 35%;
+    z-index: 1000;
+    padding: 15px;
+    color: #ffffff;
+    background: linear-gradient(#484848, #1c1c1c);
+    border: 5px outset #ffcc00;
+    border-radius: 10px;
+}
+#optionsBoxDiv {
+    position: absolute;
+    display: none;
+    flex-direction: column;
+    border: 3.5px outset #ffcc00;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.optionBox {
+    display: flex;
+    flex: 1;
+    position: relative;
+    width: inherit;
+    padding: 5px;
+    left: 0%;
+    border: none;
+    border-radius: 0px;
+    align-items: center;
+}
+.optionBox:hover {
+    color: rgb(255, 255, 255);
+    filter: brightness(130%);
+}
+.optionBox:active *, .optionBox:hover * {
+    cursor: pointer;
+}
+#invUpdNotif {
+    text-align: center;
+}
+#extensionDiv *:not(.viewOptionToggles) {
+    transition: all;
+    transition-duration: 0.2s;
+}

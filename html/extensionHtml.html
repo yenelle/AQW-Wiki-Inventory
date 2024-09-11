@@ -1,0 +1,69 @@
+</br>
+<div id="extensionDiv" style="position: sticky; top: 1%; z-index: 1; width: fit-content;">
+    <div id="inventoryButtons">
+        <button id="updateInventoryButton" class="inventoryButton" title="Refreshes open account inventory page and updates highlighted items on the wiki page.\nRequires account inventory page to be open.">
+            Update Wiki
+        </button><button id="optionsInventoryButton" class="inventoryButton">
+            ▼
+        </button><button id="openInventoryButton" class="inventoryButton" title="Opens account inventory page in a new tab.\nPlease make sure your inventory search box and filter boxes is empty." style="background: linear-gradient(rgb(191, 0, 0), rgb(93, 0, 0));">
+            Open Inventory
+        </button>
+    </div>
+
+    <div id="optionsBoxDiv">
+        <span id="showItemLoc" class="tooltip optionBox" style="background: linear-gradient(rgb(0, 80, 122), rgb(0, 26, 39));">
+            <input id="showItemLoc_checkbox" class="optionCheckboxes" type="checkbox">
+            <label for="showItemLoc_checkbox" title="Displays an icon next to items to indicate whether it is in your inventory or bank">
+                Show inventory item location
+            </label>
+        </span>
+
+        <span id="showItemType" class="tooltip optionBox" style="background: linear-gradient(rgb(0, 80, 122), rgb(0, 26, 39));">
+            <input id="showItemType_checkbox" class="optionCheckboxes" type="checkbox">
+            <label for="showItemType_checkbox" title="Displays an icon next to items to indicate their type">
+                Show inventory item type
+            </label>
+        </span>
+
+        <span id="showItemCt" class="tooltip optionBox" style="background: linear-gradient(rgb(0, 80, 122), rgb(0, 26, 39));">
+            <input id="showItemCt_checkbox" class="optionCheckboxes" type="checkbox">
+            <label for="showItemCt_checkbox" title="Example: (x125) Tainted Gem">
+                Show your misc. item count
+            </label>
+        </span>
+
+        <span id="showPreview" class="tooltip optionBox" style="background: linear-gradient(rgb(0, 80, 122), rgb(0, 26, 39));">
+            <input type="image" id="viewOptionToggle_L" class="viewOptionToggles" src="https://i.imgur.com/Aj0Hq4n.png" style="margin-left: 15px;">
+            <span id="viewOptionPreview" style="margin-right: 10px; margin-left: 10px;">
+                Example Item x50 (x10/100)
+            </span>
+            <input type="image" id="viewOptionToggle_R" class="viewOptionToggles" src="https://i.imgur.com/vkSFrJB.png" style="margin-right: 5px;">
+        </span>
+
+        <span id="showStackLimit" class="tooltip optionBox" style="background: linear-gradient(rgb(0, 80, 122), rgb(0, 26, 39));">
+            <input id="showStackLimit_checkbox" class="optionCheckboxes" style="margin-left: 15px;" type="checkbox">
+            <label for="showStackLimit_checkbox" title="Example: (x125/1000) Tainted Gem\nWARNING: If the extension has been installed for the first time or reinstalled, inventory load time may take significantly long. (Track progress on inventory page)">
+                Show stack limits on misc. items
+            </label>
+        </span>
+
+        <span id="reloadLoop" class="tooltip optionBox">
+            <input id="reloadLoop_checkbox" class="optionCheckboxes" type="checkbox">
+            <label for="reloadLoop_checkbox" title="Updates wiki at every chosen time interval. Uncheck or press button during countdown to disable looping." style="vertical-align: sub;">
+                Update wiki every
+            </label>
+            <select id="reloadLoop_select" style="margin-left: 5px;">
+                <option value="5">5s</option>
+                <option value="10">10s</option>
+                <option value="15">15s</option>
+                <option value="30">30s</option>
+                <option value="45">45s</option>
+                <option value="60">60s</option>
+            </select>
+        </span>
+    </div>
+    <span id="invUpdNotif" class="tooltip">
+        Inventory loading...
+    </span>
+</div>
+</br>
