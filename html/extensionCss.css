@@ -99,16 +99,3 @@
     transition: all;
     transition-duration: 0.2s;
 }
-#progressBox {
-    display: none;
-    position: absolute;
-    left: 33%;
-    z-index: 1000;
-    font-family: sans-serif;
-    padding: 15px;
-    width: auto;
-    color: #ffffff;
-    background: linear-gradient(#484848, #1c1c1c);
-    border: 5px outset #ffcc00;
-    border-radius: 10px;
-}
