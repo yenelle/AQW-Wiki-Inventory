@@ -99,3 +99,8 @@
     transition: all;
     transition-duration: 0.2s;
 }
+
+.wikiItemIcons {
+    height: 16px;
+    vertical-align: text-bottom;
+}
