@@ -27,6 +27,7 @@
 }
 #viewOptionPreview {
     user-select: none;
+    width: 24ch;
 }
 #updateInventoryButton {
     position: relative;
