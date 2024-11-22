@@ -94,6 +94,7 @@
     cursor: pointer;
 }
 #invUpdNotif {
+    user-select: none;
     text-align: center;
 }
 #extensionDiv *:not(.viewOptionToggles) {
