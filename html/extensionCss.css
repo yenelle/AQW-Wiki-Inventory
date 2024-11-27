@@ -94,6 +94,9 @@
 .optionBox:active *, .optionBox:hover * {
     cursor: pointer;
 }
+.optionBox:active {
+  filter: brightness(175%);
+}
 #invUpdNotif {
     user-select: none;
     text-align: center;
