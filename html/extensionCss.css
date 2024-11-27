@@ -99,6 +99,7 @@
 }
 #optionsBoxDiv label {
     user-select: none;
+    margin-right: 10px;
 }
 #invUpdNotif {
     user-select: none;
